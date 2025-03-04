@@ -1,9 +1,12 @@
+import BookList from "@/components/BookList";
+import BookOverview from "@/components/BookOverview";
+
 const Home = () => {
-    return (
-        <div className="flex-center h-screen">
-            <h1 className="h1"></h1>
-        </div>
-    );
+    <>
+        <BookOverview />
+
+        <BookList />
+    </>;
 };
 
 export default Home;
