@@ -3,6 +3,13 @@ import { cn } from "@/lib/utils";
 import BookCoverSvg from "@/components/BookCoverSvg";
 import Image from "next/image";
 
+interface Props {
+    className?: string;
+    variant?: BookCoverVariant;
+    coverColor: string;
+    coverImage: string;
+}
+
 type BookCoverVariant = "extraSmall" | "small" | "medium" | "regular" | "wide";
 
 const variantStyles: Record<BookCoverVariant, string> = {
@@ -12,13 +19,6 @@ const variantStyles: Record<BookCoverVariant, string> = {
     regular: "book-cover_regular",
     wide: "book-cover_wide",
 };
-
-interface Props {
-    className?: string;
-    variant?: BookCoverVariant;
-    coverColor: string;
-    coverImage: string;
-}
 
 const BookCover = ({
     className,
@@ -43,7 +43,7 @@ const BookCover = ({
                     src={coverImage}
                     alt="Book Cover"
                     fill
-                    className="rounded-sm objectfill"
+                    className="rounded-sm object-fill"
                 />
             </div>
         </div>
