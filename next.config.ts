@@ -4,29 +4,15 @@ const nextConfig: NextConfig = {
     images: {
         remotePatterns: [
             {
-                protocol: 'https',
-                hostname: "*",
-            }
-            // {
-            //     protocol: 'https',
-            //     hostname: "img.freepik.com",
-            // }
-            // {
-            //     protocol: 'https',
-            //     hostname: "cdn.pixabay.com",
-            // }
-            // {
-            //     protocol: 'https',
-            //     hostname: "cdn.appwrite.io",
-            // }
-        ]
+                protocol: "https",
+                hostname: "placehold.co",
+            },
+            {
+                protocol: "https",
+                hostname: "m.media-amazon.com",
+            },
+        ],
     },
-    devIndicators: {
-        appIsrStatus: true,
-        buildActivity: true,
-        buildActivityPosition: 'bottom-right'
-    }
-    
 };
 
 export default nextConfig;
