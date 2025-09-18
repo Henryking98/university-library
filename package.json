@@ -26,6 +26,7 @@
         "@tailwindcss/typography": "^0.5.15",
         "@upstash/ratelimit": "^2.0.6",
         "@upstash/redis": "^1.35.3",
+        "@upstash/workflow": "^0.2.19",
         "bcryptjs": "^3.0.2",
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.1",
